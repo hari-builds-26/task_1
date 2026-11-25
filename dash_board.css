@@ -1,0 +1,355 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #17191f;
+}
+
+/* Navigation */
+
+.navbar {
+    width: 100%;
+    height: 73px;
+    border-bottom: 1px solid #e5e7eb;
+    background-color: white;
+}
+
+.navbar-content {
+    width: 79%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #17191f;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo-box {
+    width: 30px;
+    height: 30px;
+    background-color: #2860f5;
+    border-radius: 9px;
+    margin-right: 10px;
+}
+
+.navigation {
+    display: flex;
+    gap: 32px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #303744;
+    font-size: 15px;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.login-link {
+    text-decoration: none;
+    color: #111111;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.profile-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 18px;
+    background-color: #2860f5;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Profile Icon */
+
+.profile-icon {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    display: inline-block;
+}
+
+.profile-icon::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 5px;
+}
+
+.profile-icon::after {
+    content: "";
+    width: 14px;
+    height: 7px;
+    background-color: white;
+    border-radius: 8px 8px 4px 4px;
+    position: absolute;
+    bottom: 0;
+    left: 2px;
+}
+
+/* Hero Section */
+
+.hero {
+    background-color: white;
+    padding: 72px 0;
+}
+
+.hero-content {
+    width: 79%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.announcement {
+    display: inline-block;
+    background-color: #eef5ff;
+    color: #2860f5;
+    padding: 8px 13px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.hero-text h1 {
+    font-size: 52px;
+    line-height: 1.12;
+    margin-bottom: 22px;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #4b5563;
+    margin-bottom: 28px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.primary-button {
+    display: inline-block;
+    background-color: #2860f5;
+    color: white;
+    padding: 16px 22px;
+    border-radius: 11px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.secondary-button {
+    display: inline-block;
+    background-color: white;
+    color: #111111;
+    padding: 16px 22px;
+    border: 1px solid #cbd1dc;
+    border-radius: 11px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Invoice Preview */
+
+.invoice-background {
+    width: 46%;
+    background-color: #f7f9fc;
+    border: 1px solid #e0e4eb;
+    border-radius: 20px;
+    padding: 24px;
+}
+
+.invoice-card {
+    background-color: white;
+    border: 1px solid #e0e4eb;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.invoice-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.invoice-heading h2 {
+    font-size: 16px;
+}
+
+.paid-label {
+    background-color: #d9fbe7;
+    color: #087b45;
+    padding: 5px 11px;
+    border-radius: 15px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.invoice-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #edf0f4;
+    color: #344054;
+    font-size: 14px;
+}
+
+.invoice-total {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+    font-size: 16px;
+}
+
+/* Features Section */
+
+.features-section {
+    background-color: #f7f9fc;
+    border-top: 1px solid #e8ebf0;
+    padding: 68px 0 64px;
+}
+
+.features-content {
+    width: 79%;
+    margin: auto;
+}
+
+.features-content h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 34px;
+}
+
+.feature-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.feature-card {
+    width: 33.33%;
+    background-color: white;
+    border: 1px solid #e0e4eb;
+    border-radius: 17px;
+    padding: 24px;
+}
+
+.feature-icon {
+    width: 44px;
+    height: 44px;
+    background-color: #eef5ff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.small-icon {
+    width: 18px;
+    height: 18px;
+    background-color: #2860f5;
+    border-radius: 4px;
+}
+
+.feature-card h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #667085;
+}
+
+/* Small Screen */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .navbar-content {
+        width: 90%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navigation {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-actions {
+        gap: 20px;
+    }
+
+    .hero-content {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 38px;
+    }
+
+    .invoice-background {
+        width: 100%;
+    }
+
+    .features-content {
+        width: 90%;
+    }
+
+    .feature-cards {
+        flex-direction: column;
+    }
+
+    .feature-card {
+        width: 100%;
+    }
+
+}
