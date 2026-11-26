@@ -1,67 +1,124 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Profile Card</title>
-    <link rel="stylesheet" href="profile.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopLite - Profile</title>
+  <link rel="stylesheet" href="profile.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <main class="profile-card">
+  <main class="screen">
 
-        <header class="profile-header">
-        </header>
+    <!-- SHOPLITE LOGO -->
+    <div class="brand">
+      <div class="brand-icon">
+        <svg viewBox="0 0 32 32" fill="none">
+          <path d="M7 11h18l1.5 17h-21L7 11Z" fill="white"/>
+          <path d="M11 12V9a5 5 0 0 1 10 0v3"
+                stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <span>Shop<span>Lite</span></span>
+    </div>
 
-        <section class="profile-content">
+    <!-- BACKGROUND DECORATIONS -->
+    <div class="corner-shape"></div>
+    <div class="bottom-shape"></div>
+    <div class="background-bag"></div>
+    <div class="curve-line"></div>
 
-            <div class="profile-image">
-                HM
-            </div>
+    <!-- FLOATING ICONS -->
+    <div class="floating-icon chart-icon">
+      <svg viewBox="0 0 48 48" fill="none">
+        <path d="M8 35L18 25L25 29L39 12"
+              stroke="#5636E8" stroke-width="4"
+              stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M29 12H39V22"
+              stroke="#5636E8" stroke-width="4"
+              stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="8" y="37" width="7" height="7" rx="2" fill="#5636E8"/>
+        <rect x="20" y="32" width="7" height="12" rx="2" fill="#5636E8"/>
+        <rect x="32" y="25" width="7" height="19" rx="2" fill="#5636E8"/>
+      </svg>
+    </div>
 
-            <h1>Hariharan M</h1>
+    <div class="floating-icon cart-icon">
+      <svg viewBox="0 0 48 48" fill="none">
+        <path d="M7 10H12L16 31H37L42 17H14"
+              stroke="#5636E8" stroke-width="3.5"
+              stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M18 22H38M20 27H36"
+              stroke="#5636E8" stroke-width="2.5"
+              stroke-linecap="round"/>
+        <circle cx="19" cy="38" r="3.5" fill="#5636E8"/>
+        <circle cx="35" cy="38" r="3.5" fill="#5636E8"/>
+      </svg>
+    </div>
 
-            <p class="role">
-                UI/UX Designer · Chennai
-            </p>
+    <!-- PROFILE CARD -->
+    <section class="profile-card">
 
-            <p class="description">
-                I design clean, simple interfaces for web and
-                mobile. Now learning to turn my designs into code.
-            </p>
+      <div class="card-banner"></div>
 
-            <section class="profile-stats">
+      <div class="avatar-wrap">
+        <img src="profile_image.jpeg" alt="Hariharan profile photo">
+      </div>
 
-                <div class="stat">
-                    <h2>3</h2>
-                    <p>Projects</p>
-                </div>
+      <div class="profile-content">
 
-                <div class="stat">
-                    <h2>3</h2>
-                    <p>Live sites</p>
-                </div>
+        <h1>Hariharan M</h1>
 
-                <div class="stat">
-                    <h2>12</h2>
-                    <p>Case studies</p>
-                </div>
+        <p class="role">UI/UX Designer · Chennai</p>
 
-            </section>
+        <p class="description">
+          I design clean, simple interfaces for web and
+          mobile. Now learning to turn my designs into code.
+        </p>
 
-            <div class="skills">
-                <span class="skill">Figma</span>
-                <span class="skill">Design systems</span>
-                <span class="skill">Prototyping</span>
-            </div>
+        <!-- PROFILE STATS -->
+        <div class="stats">
+          <div class="stat">
+            <strong>3</strong>
+            <span>Projects</span>
+          </div>
 
-            <div class="profile-buttons">
-                <button class="follow-button">Follow</button>
-                <button class="message-button">Message</button>
-            </div>
+          <div class="stat">
+            <strong>3</strong>
+            <span>Live sites</span>
+          </div>
 
-        </section>
+          <div class="stat">
+            <strong>12</strong>
+            <span>Case studies</span>
+          </div>
+        </div>
 
-    </main>
+        <!-- SKILLS -->
+        <div class="skills">
+          <span>Figma</span>
+          <span>Design systems</span>
+          <span>Prototyping</span>
+        </div>
+
+        <!-- ACTION BUTTONS -->
+        <div class="actions">
+          <a href="#" class="follow-button">Follow</a>
+          <a href="#" class="message-button">Message</a>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="spark spark-one"></div>
+    <div class="spark spark-two"></div>
+
+  </main>
 
 </body>
 </html>

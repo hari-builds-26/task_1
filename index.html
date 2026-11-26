@@ -1,180 +1,164 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>ShopLite Login</title>
-
-    <link rel="stylesheet" href="login_screen.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopLite - Login</title>
+  <link rel="stylesheet" href="login_screen.css">
 </head>
-
 <body>
 
-    <main class="page">
+  <main class="login-page">
 
-        <section class="left-panel">
+    <!-- LEFT BRAND SECTION -->
+    <section class="brand-panel">
 
-            <header class="brand">
+      <div class="shape shape-top"></div>
+      <div class="shape shape-bottom"></div>
 
-                <div class="logo-box"></div>
+      <a class="brand" href="#">
+        <span class="brand-mark">
+          <svg viewBox="0 0 40 40">
+            <rect x="4" y="9" width="32" height="27" rx="5" fill="currentColor"/>
+            <path d="M12 12V9a8 8 0 0 1 16 0v3"
+              fill="none" stroke="#087d75"
+              stroke-width="2.4" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span>ShopLite</span>
+      </a>
 
-                <div class="brand-name">
-                    ShopLite
-                </div>
+      <div class="brand-copy">
+        <h1>
+          Billing made simple<br>
+          for <span>small shops</span>
+        </h1>
 
-            </header>
+        <p>
+          Create invoices, track payments and<br class="desktop-break">
+          see your sales in one place.
+        </p>
+      </div>
 
-            <div class="promo">
+      <div class="illustration-wrap">
+        <img
+          src="Invoice Shop Growth Illustration.png"
+          alt="Shop growth illustration"
+          class="shop-illustration"
+        >
+      </div>
 
-                <h1>
-                    Billing made simple
-                    for small shops
-                </h1>
+      <div class="stats">
 
-                <p>
-                    Create invoices, track payments and see
-                    your sales in one place.
-                </p>
+        <div class="stat-card">
+          <svg viewBox="0 0 42 42">
+            <circle cx="21" cy="21" r="17"
+              fill="none" stroke="currentColor" stroke-width="4"/>
+            <path d="M21 10v12l8 5"
+              fill="none" stroke="currentColor"
+              stroke-width="4" stroke-linecap="round"/>
+          </svg>
 
-            </div>
+          <div>
+            <strong>2 min</strong>
+            <span>to create an invoice</span>
+          </div>
+        </div>
 
-            <div class="stats">
+        <div class="stat-card">
+          <svg viewBox="0 0 42 42">
+            <path d="M5 17 9 8h24l4 9M7 17h28v17H7z"
+              fill="none" stroke="currentColor"
+              stroke-width="3.5" stroke-linejoin="round"/>
+            <path d="M7 17c0 5 7 5 7 0 0 5 7 5 7 0 0 5 7 5 7 0 0 5 7 5 7 0"
+              fill="none" stroke="currentColor"
+              stroke-width="3.2" stroke-linecap="round"/>
+          </svg>
 
-                <div class="stat-card">
+          <div>
+            <strong>10k+</strong>
+            <span>shops use ShopLite</span>
+          </div>
+        </div>
 
-                    <h2>2 min</h2>
+      </div>
+    </section>
 
-                    <p>to create an invoice</p>
+    <!-- RIGHT LOGIN SECTION -->
+    <section class="form-panel">
 
-                </div>
+      <div class="corner-shape corner-top"></div>
+      <div class="corner-shape corner-bottom"></div>
 
-                <div class="stat-card">
+      <div class="login-form-wrap">
 
-                    <h2>10k+</h2>
+        <header class="form-heading">
+          <h2>Welcome back</h2>
+          <p>Log in to your ShopLite account</p>
+        </header>
 
-                    <p>shops use ShopLite</p>
+        <form class="login-form" action="dash_board.html" method="GET">
 
-                </div>
+          <label for="email">Email</label>
 
-            </div>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            value="hariharan@shoplite.in"
+            autocomplete="username"
+          >
 
-        </section>
+          <label for="password" class="password-label">
+            Password
+          </label>
 
-        <section class="right-panel">
+          <input
+            id="password"
+            name="password"
+            type="password"
+            placeholder="Enter your password"
+            autocomplete="current-password"
+          >
 
-            <div class="login-content">
+          <div class="form-options">
 
-                <h1>Welcome back</h1>
+            <label class="remember">
+              <input type="checkbox" checked>
+              <span class="custom-check"></span>
+              <span>Remember me</span>
+            </label>
 
-                <p class="subtitle">
-                    Log in to your ShopLite account
-                </p>
+            <a href="#">Forgot password?</a>
 
-                <form action="dash_board.html" method="get">
+          </div>
 
-                    <div class="form-group">
+          <button class="login-button" type="submit">
+            Log in
+          </button>
 
-                        <label for="email">Email</label>
+          <div class="separator">
+            <span></span>
+            <em>or</em>
+            <span></span>
+          </div>
 
-                        <input
-                            type="email"
-                            id="email"
-                            value="hariharan@shoplite.in"
-                            required
-                        >
+          <button class="google-button" type="button">
+            <span class="google-g">G</span>
+            Continue with Google
+          </button>
 
-                    </div>
+          <p class="signup-text">
+            New to ShopLite?
+            <a href="#">Create an account</a>
+          </p>
 
-                    <div class="form-group">
+        </form>
+      </div>
+    </section>
 
-                        <label for="password">Password</label>
-
-                        <div class="password-field">
-
-                            <input
-                                type="password"
-                                id="password"
-                                placeholder="Enter your password"
-                                required
-                            >
-
-                            <button
-                                type="button"
-                                class="show-button"
-                            >
-                                Show
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                    <div class="options">
-
-                        <div class="remember">
-
-                            <input
-                                type="checkbox"
-                                id="remember"
-                            >
-
-                            <label for="remember">
-                                Remember me
-                            </label>
-
-                        </div>
-
-                        <a href="#">Forgot password?</a>
-
-                    </div>
-
-                    <button
-                        type="submit"
-                        class="login-button"
-                    >
-                        Log in
-                    </button>
-
-                </form>
-
-                <div class="divider">
-
-                    <div class="divider-line"></div>
-
-                    <p>or</p>
-
-                    <div class="divider-line"></div>
-
-                </div>
-
-                <button
-                    class="google-button"
-                    type="button"
-                >
-
-                    <div class="google-mark"></div>
-
-                    Continue with Google
-
-                </button>
-
-                <p class="create-account">
-
-                    New to ShopLite?
-
-                    <a href="#">Create an account</a>
-
-                </p>
-
-            </div>
-
-        </section>
-
-    </main>
+  </main>
 
 </body>
-
 </html>

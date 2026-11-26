@@ -2,192 +2,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>ShopLite Dashboard</title>
-
-    <link rel="stylesheet" href="dash_board.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopLite - Simple Billing for Every Shop</title>
+  <link rel="stylesheet" href="dash_board.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <header class="navbar">
+  <main class="page">
 
-        <div class="navbar-content">
+    <!-- FIRST SECTION: NAVBAR + HERO -->
+    <section class="hero-section">
 
-            <a href="dashboard_screen.html" class="brand">
-                <div class="logo-box"></div>
-                <span>ShopLite</span>
+      <header class="navbar">
+        <a href="#" class="logo">
+          <span class="logo-icon">
+            <svg viewBox="0 0 32 32" fill="none">
+              <path d="M8 11h16l1.5 15h-19L8 11Z" fill="white"/>
+              <path d="M11 12V9a5 5 0 0 1 10 0v3"
+                    stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="logo-name">Shop<span>Lite</span></span>
+        </a>
+
+        <nav class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">Customers</a>
+          <a href="#">Help</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="index.html" class="login-link">Log in</a>
+          <a href="profile.html" class="get-started">Profile</a>
+        </div>
+      </header>
+
+      <div class="hero-content">
+
+        <div class="hero-left">
+          <div class="announcement">
+            <span>✦</span>
+            New · GST-ready invoices
+          </div>
+
+          <h1>
+            Send invoices in 2<br>
+            minutes, get paid<br>
+            <span class="highlight-word">faster</span>
+          </h1>
+
+          <p class="hero-description">
+            ShopLite helps small shops create bills, track payments and see
+            daily sales from any phone or laptop.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#" class="primary-button">
+              Start for free
+              <span class="arrow">→</span>
             </a>
 
-            <nav class="navigation">
-                <a href="#features">Features</a>
-                <a href="#pricing">Pricing</a>
-                <a href="#customers">Customers</a>
-                <a href="#help">Help</a>
-            </nav>
-
-            <div class="nav-actions">
-                <a href="index.html" class="login-link">
-                    Log in
-                </a>
-
-                <a href="profile.html" class="profile-button">
-                    <span class="profile-icon"></span>
-                    Profile
-                </a>
-            </div>
-
+            <a href="#" class="secondary-button">
+              <span class="play-icon">▶</span>
+              Watch demo
+            </a>
+          </div>
         </div>
 
-    </header>
+        <!-- INVOICE ILLUSTRATION -->
+        <div class="hero-visual">
 
-    <!-- Main Dashboard -->
-    <main>
+          <div class="visual-orb orb-one"></div>
+          <div class="visual-orb orb-two"></div>
 
-        <!-- Hero Section -->
-        <section class="hero">
+          <div class="invoice-card">
 
-            <div class="hero-content">
-
-                <div class="hero-text">
-
-                    <p class="announcement">
-                        New · GST-ready invoices
-                    </p>
-
-                    <h1>
-                        Send invoices in 2
-                        minutes, get paid
-                        faster
-                    </h1>
-
-                    <p class="description">
-                        ShopLite helps small shops create bills,
-                        track payments and see daily sales from
-                        any phone or laptop.
-                    </p>
-
-                    <div class="hero-buttons">
-
-                        <a href="login_screen.html" class="primary-button">
-                            Start for free
-                        </a>
-
-                        <a href="#features" class="secondary-button">
-                            Watch demo
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <!-- Invoice Preview -->
-                <div class="invoice-background">
-
-                    <div class="invoice-card">
-
-                        <div class="invoice-heading">
-
-                            <h2>Invoice #1024</h2>
-
-                            <span class="paid-label">
-                                PAID
-                            </span>
-
-                        </div>
-
-                        <div class="invoice-row">
-                            <span>Cotton shirts × 4</span>
-                            <span>₹2,400</span>
-                        </div>
-
-                        <div class="invoice-row">
-                            <span>Denim jeans × 2</span>
-                            <span>₹2,200</span>
-                        </div>
-
-                        <div class="invoice-row">
-                            <span>GST 5%</span>
-                            <span>₹230</span>
-                        </div>
-
-                        <div class="invoice-total">
-                            <strong>Total</strong>
-                            <strong>₹4,830</strong>
-                        </div>
-
-                    </div>
-
-                </div>
-
+            <div class="invoice-header">
+              <h2>Invoice #1024</h2>
+              <span class="paid-label">PAID</span>
             </div>
 
-        </section>
-
-        <!-- Features Section -->
-        <section class="features-section" id="features">
-
-            <div class="features-content">
-
-                <h2>Everything your shop needs</h2>
-
-                <div class="feature-cards">
-
-                    <div class="feature-card">
-
-                        <div class="feature-icon">
-                            <div class="small-icon"></div>
-                        </div>
-
-                        <h3>Quick invoices</h3>
-
-                        <p>
-                            Pick items, add the customer and send the
-                            bill on WhatsApp.
-                        </p>
-
-                    </div>
-
-                    <div class="feature-card">
-
-                        <div class="feature-icon">
-                            <div class="small-icon"></div>
-                        </div>
-
-                        <h3>Payment tracking</h3>
-
-                        <p>
-                            See who paid and who didn't. Send
-                            reminders in one tap.
-                        </p>
-
-                    </div>
-
-                    <div class="feature-card">
-
-                        <div class="feature-icon">
-                            <div class="small-icon"></div>
-                        </div>
-
-                        <h3>Daily sales report</h3>
-
-                        <p>
-                            Know your sales, top items and profit
-                            at the end of every day.
-                        </p>
-
-                    </div>
-
-                </div>
-
+            <div class="invoice-row">
+              <span class="item-icon shirt-icon">◆</span>
+              <span class="item-name">Cotton shirts × 4</span>
+              <span class="item-price">₹2,400</span>
             </div>
 
-        </section>
+            <div class="invoice-row">
+              <span class="item-icon jeans-icon">▰</span>
+              <span class="item-name">Denim jeans × 2</span>
+              <span class="item-price">₹2,200</span>
+            </div>
 
-    </main>
+            <div class="invoice-row">
+              <span class="item-icon gst-icon">%</span>
+              <span class="item-name">GST 5%</span>
+              <span class="item-price">₹230</span>
+            </div>
+
+            <div class="invoice-total">
+              <strong>Total</strong>
+              <strong>₹4,830</strong>
+            </div>
+
+          </div>
+
+          <div class="floating-invoice">
+            <div class="paper-line line-short"></div>
+            <div class="paper-line"></div>
+            <div class="paper-line line-medium"></div>
+            <div class="paper-line"></div>
+            <div class="paper-line line-long"></div>
+            <div class="paper-line line-medium"></div>
+            <div class="check-circle">✓</div>
+          </div>
+
+          <div class="spark spark-one"></div>
+          <div class="spark spark-two"></div>
+
+        </div>
+      </div>
+
+      <div class="hero-decoration hero-decoration-left"></div>
+      <div class="hero-decoration hero-decoration-right"></div>
+
+    </section>
+
+
+    <!-- SECOND SECTION: FEATURES -->
+    <section class="features-section" id="features">
+
+      <div class="dot-pattern dots-left"></div>
+      <div class="dot-pattern dots-right"></div>
+      <div class="bottom-decoration"></div>
+
+      <div class="features-container">
+
+        <h2 class="features-heading">
+          Everything your shop <span>needs</span>
+        </h2>
+
+        <div class="feature-cards">
+
+          <!-- CARD 1 -->
+          <article class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 48 48" fill="none">
+                <path d="M27 5L11 26h11l-2 17 17-24H25l2-14Z"
+                      fill="#5035E8" stroke="#5035E8"
+                      stroke-linejoin="round"/>
+              </svg>
+            </div>
+
+            <h3>Quick invoices</h3>
+            <p>
+              Pick items, add the customer and send the
+              bill on WhatsApp.
+            </p>
+
+            <a href="#" class="card-arrow">→</a>
+          </article>
+
+
+          <!-- CARD 2 -->
+          <article class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 48 48" fill="none">
+                <rect x="7" y="10" width="34" height="28" rx="5"
+                      fill="#5035E8"/>
+                <path d="M7 18h34" stroke="white" stroke-width="3"/>
+                <circle cx="15" cy="29" r="2.2" fill="white"/>
+                <circle cx="22" cy="29" r="2.2" fill="white"/>
+              </svg>
+            </div>
+
+            <h3>Payment tracking</h3>
+            <p>
+              See who paid and who didn’t. Send
+              reminders in one tap.
+            </p>
+
+            <a href="#" class="card-arrow">→</a>
+          </article>
+
+
+          <!-- CARD 3 -->
+          <article class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 48 48" fill="none">
+                <rect x="7" y="27" width="8" height="14" rx="3"
+                      fill="#5035E8"/>
+                <rect x="20" y="17" width="8" height="24" rx="3"
+                      fill="#5035E8"/>
+                <rect x="33" y="7" width="8" height="34" rx="3"
+                      fill="#5035E8"/>
+              </svg>
+            </div>
+
+            <h3>Daily sales report</h3>
+            <p>
+              Know your sales, top items and profit at the
+              end of every day.
+            </p>
+
+            <a href="#" class="card-arrow">→</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
 
 </body>
 </html>
